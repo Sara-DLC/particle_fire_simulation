@@ -17,7 +17,8 @@ private:
 	SDL_Window *m_window;
 	SDL_Renderer *m_renderer;
 	SDL_Texture *m_texture;
-	Uint32 *m_buffer;
+	Uint32 *m_buffer1;
+	Uint32 *m_buffer2;
 
 public:
 	Screen();
@@ -27,6 +28,7 @@ public:
 	bool processEvents();
 	void close();
 	void clear();
+	void boxBlur();
 };
 
 } /* namespace screenpkg */
